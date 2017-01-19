@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://fb.me/react-15.2.1.js"></script>
+        <script src="https://fb.me/react-dom-15.2.1.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Overpass+Mono" rel="stylesheet">
+        <title>LBMDROP</title>
+    </head>
+    <body>
+        <div id='react-container'></div>
+        <script type="text/babel">
+        var Layout = React.createClass({
+            getInitialState() {
+                return {editing: false}
+            },
+            edit() {
+                this.setState({editing: true})
+            },
+            save() {
+                this.setState({editing: false})
+            },
+            remove() {
+                alert("Removing Note")
+            },
+            render() {
+                return (
+                    <div className="layout" style = { { backgroundImage: "url('C:/Users/mjames/Desktop/lbmdrp/htmlMockups/images/page_background.jpg')"} }>
+                        <Logo></Logo>
+                        <SearchBar></SearchBar>
+                        <ArtistFeed></ArtistFeed>
+                        <MyArtists></MyArtists>
+                                            </div>
+                    )
+            }
+        })
+        var Logo = React.createClass({
+
+            render() {
+                return (
+                    <a href="#" className= "logoLink">
+                      <div className="logo">LBMDROP</div>
+                    </a>
+                )
+            }
+        })
+        var SearchBar = React.createClass({
+
+            render() {
+                return (
+
+                      <div className="SearchBar">
+                       <input type='text' placeholder='Search Artists...' id='search-text-input' />
+                          <div className="searchButton">
+                            <img src='magnifying_glass.png' />
+                          </div>
+                      </div>
+
+                )
+            }
+        })
+        var ArtistFeed = React.createClass({
+
+            render() {
+                return (
+
+                      <div className="artistFeed">Artist Feed
+                      </div>
+
+
+                )
+            }
+        })
+        var MyArtists = React.createClass({
+
+            render() {
+                return (
+
+                      <div className="myartists">My Artists
+                      </div>
+
+
+                )
+            }
+        })
+        ReactDOM.render(<Layout></Layout>,
+            document.getElementById('react-container'))
+
+        </script>
+    </body>
+</html>
