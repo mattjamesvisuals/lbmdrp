@@ -1,70 +1,62 @@
 /*style.css*/
+
 .layout {
-text-align: center;
-min-width: 100%;
-min-height: 1024px;
-width: 100%;
-height: auto;
-position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  background: no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    text-align: center;
+    min-width: 100%;
+    min-height: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -10;
+    background: no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .logoLink {
-  text-decoration: none;
+    text-decoration: none;
 }
+
 .logo {
-  font-size: 7em;
-  font-family: 'Overpass Mono', monospace;
-  text-decoration: none;
-  color: white;
-  -webkit-text-stroke-width: 1px;
--webkit-text-stroke-color: black;
-
-}
-#search-text-input{
-    border-top:thin solid  #e5e5e5;
-    border-right:thin solid #e5e5e5;
-    border-bottom:0;
-    border-left:thin solid  #e5e5e5;
-    box-shadow:0px 1px 1px 1px #e5e5e5;
-    /*float:left;*/
-    height:20px;
-    margin:.8em 0 0 .5em;
-    outline:0;
-    padding:.4em 0 .4em .6em;
-    width:250px;
-}
-.searchButton {
-    background-color:#f1f1f1;
-    border-top:thin solid #e5e5e5;
-    box-shadow:1px 1px 1px 1px #e5e5e5;
-    cursor:pointer;
-    /*float:left;*/
-    height:27px;
-    margin:11px 0 0 0;
-    text-align:center;
-    width:50px;
+    font-size: 7em;
+    font-family: 'Overpass Mono', monospace;
+    text-decoration: none;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    padding-top: 50px;
 }
 
-#button-holder img{
-    margin:4px;
-    width:20px;
+#search {}
+
+#search input[type="text"] {
+    background: url(C:/Users/Matt/Desktop/lbmdrp/htmlMockups/images/search-white.png) no-repeat 10px 6px #fcfcfc;
+    border: 1px solid #d1d1d1;
+    font: bold 12px Arial, Helvetica, Sans-serif;
+    color: #bebebe;
+    width: 150px;
+    padding: 6px 15px 6px 35px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+    -webkit-transition: all 0.7s ease 0s;
+    -moz-transition: all 0.7s ease 0s;
+    -o-transition: all 0.7s ease 0s;
+    transition: all 0.7s ease 0s;
 }
-.searchBar {
 
+#search input[type="text"]:focus {
+    width: 200px;
 }
-.searchButton {
 
-
-}
-.artistFeed{
-
-
+.artistFeed {
+  padding: 50px;
 }

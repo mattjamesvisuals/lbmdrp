@@ -26,7 +26,7 @@
             },
             render() {
                 return (
-                    <div className="layout" style = { { backgroundImage: "url('C:/Users/mjames/Desktop/lbmdrp/htmlMockups/images/page_background.jpg')"} }>
+                    <div className="layout" style = { { backgroundImage: "url('C:/Users/matt/Desktop/lbmdrp/htmlMockups/images/page_background.jpg')"} }>
                         <Logo></Logo>
                         <SearchBar></SearchBar>
                         <ArtistFeed></ArtistFeed>
@@ -51,10 +51,9 @@
                 return (
 
                       <div className="SearchBar">
-                       <input type='text' placeholder='Search Artists...' id='search-text-input' />
-                          <div className="searchButton">
-                            <img src='magnifying_glass.png' />
-                          </div>
+                        <form method="get" action="/search" id="search">
+                          <input name="q" type="text" size="40" placeholder="Search Artists..." />
+                        </form>
                       </div>
 
                 )
