@@ -32,11 +32,12 @@
 #search {}
 
 #search input[type="text"] {
-    background: url(images/search-white.png) no-repeat 10px 6px #fcfcfc;
+    background: url(images/search-white.png) no-repeat 10px 19px #fcfcfc;
     border: 1px solid #d1d1d1;
-    font: bold 12px Arial, Helvetica, Sans-serif;
+    font: bold 15px Arial, Helvetica, Sans-serif;
     color: #bebebe;
     width: 35%;
+    line-height: 3;
     padding: 6px 15px 6px 35px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
@@ -57,7 +58,7 @@
 .displayBox {
   padding: 50px;
   background-color: white;
-  width: 30%;
+  width: 75%;
   text-align: center;
   opacity: .5;
   margin:auto;
@@ -65,9 +66,11 @@
 }
 .artistFeed {
   font-size: 2em;
+  text-align: center;
 
 
 }
 .myartists {
   font-size: 2em;
+  text-align: center;
 }

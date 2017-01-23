@@ -46,7 +46,6 @@
             }
         })
         var SearchBar = React.createClass({
-
             render() {
                 return (
 
@@ -73,10 +72,26 @@
         })
         var MyArtists = React.createClass({
 
+          artistItem(artist) {
+            return (
+              <li id={artist}>
+                {artist}<button class="close">&times;</button>
+              </li>
+            )
+          },
+
             render() {
+              var artists = ["Korn","Beyonce","Metallica"];
+
                 return (
 
                       <div className="myartists displayBox">My Artists
+                      <ul>
+
+                       { artists.map((artist) => this.artistItem(artist)) }
+
+                      </ul>
+
                       </div>
 
 
