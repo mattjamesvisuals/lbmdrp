@@ -75,18 +75,23 @@
           artistItem(artist) {
             return (
               <li id={artist}>
-                {artist}<button class="close"><img src="images/delete-icon.png" height="25"/></button>
+                <div className="artistName">
+                  {artist}
+                </div>
+                <div className="deleteIcon">
+                  <button className="close"><img src="images/delete-icon3.png" height="25"/></button>
+                </div>
               </li>
             )
           },
 
             render() {
-              var artists = ["Korn","Beyonce","Metallica"];
+              var artists = ["Korn","Beyonce","Metallica", "Jesse and the 20% chance"];
 
                 return (
 
                       <div className="myartists displayBox">My Artists
-                      <ul>
+                      <ul className= "artistList">
 
                        { artists.map((artist) => this.artistItem(artist)) }
 

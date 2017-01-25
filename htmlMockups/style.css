@@ -73,4 +73,16 @@
 .myartists {
   font-size: 2em;
   text-align: center;
+
+}
+.artistList {
+  text-align: left;
+
+
+}
+.deleteIcon {
+  float: right;
+}
+.artistName{
+  float:left;
 }
