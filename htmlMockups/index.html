@@ -72,16 +72,20 @@
         })
         var MyArtists = React.createClass({
 
+          deleteArtist(artist) {
+            alert (artist)
+          },
+
           artistItem(artist) {
             return (
-              <li id={artist}>
+              <div className="artist" key={artist}>
                 <div className="artistName">
                   {artist}
                 </div>
                 <div className="deleteIcon">
-                  <button className="close"><img src="images/delete-icon3.png" height="25"/></button>
+                  <button className="close" onClick={this.deleteArtist}><img src="images/delete-icon2.png" height="25"/></button>
                 </div>
-              </li>
+              </div>
             )
           },
 
@@ -91,11 +95,10 @@
                 return (
 
                       <div className="myartists displayBox">My Artists
-                      <ul className= "artistList">
 
                        { artists.map((artist) => this.artistItem(artist)) }
 
-                      </ul>
+
 
                       </div>
 
