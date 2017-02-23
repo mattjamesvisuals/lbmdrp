@@ -32,7 +32,7 @@
 #search {}
 
 #search input[type="text"] {
-    background: url(images/search-white.png) no-repeat 10px 19px #fcfcfc;
+    background: url(images/search-icon-png-9982.png) no-repeat 10px 19px #fcfcfc;
     border: 1px solid #d1d1d1;
     font: bold 15px Arial, Helvetica, Sans-serif;
     color: #bebebe;
@@ -55,6 +55,7 @@
 #search input[type="text"]:focus {
     width: 200px;
 }
+
 .displayBox {
   padding: 50px;
   background-color: white;

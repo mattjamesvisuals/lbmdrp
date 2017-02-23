@@ -1,0 +1,12 @@
+.logo {
+    font-size: 7em;
+    text-decoration: none;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    padding-top: 50px;
+
+}
+.logoLink {
+    text-decoration: none;
+}
