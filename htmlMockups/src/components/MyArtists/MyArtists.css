@@ -11,13 +11,11 @@
 .artistFeed {
   font-size: 2em;
   text-align: center;
-
-
 }
+
 .myartists {
   font-size: 2em;
   text-align: center;
-
 }
 
 .artistList {
@@ -28,10 +26,12 @@
 .deleteIcon {
   width:20%;
 }
-.artistName{
+
+.artistName {
   width:80%;
   text-align: left;
 }
+
 .artist {
   width: 100%;
   display: flex;
